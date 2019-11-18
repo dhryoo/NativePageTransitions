@@ -195,10 +195,17 @@ public class NativePageTransitions extends CordovaPlugin {
             }
           }
 
+          /*
           if (href != null && !"null".equals(href)) {
             if (!href.startsWith("#")) {
               webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
             }
+          }
+          */
+
+          if (href != null && !"null".equals(href)) 
+          {
+            webView.loadUrlIntoView(href, false);
           }
 
           if (delay > -1) {
