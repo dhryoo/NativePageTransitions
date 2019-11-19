@@ -204,7 +204,8 @@ public class NativePageTransitions extends CordovaPlugin {
           */
           if (href != null && !"null".equals(href)) 
           {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
+              webView.loadUrlIntoView(url + href, false);
           }
  
 
