@@ -205,7 +205,7 @@ public class NativePageTransitions extends CordovaPlugin {
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
+//              url         = url.replace("#/","") + href;
               url         = url.replace("//","/") + href;
               webView.loadUrlIntoView(url + href, false);
           }
@@ -289,7 +289,7 @@ public class NativePageTransitions extends CordovaPlugin {
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
+//              url         = url.replace("#/","") + href;
               url         = url.replace("//","/") + href;
               webView.loadUrlIntoView(url + href, false);
           }
@@ -328,7 +328,7 @@ public class NativePageTransitions extends CordovaPlugin {
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
+//              url         = url.replace("#/","") + href;
               url         = url.replace("//","/") + href;
               webView.loadUrlIntoView(url + href, false);
 
@@ -375,7 +375,7 @@ public class NativePageTransitions extends CordovaPlugin {
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
+//              url         = url.replace("#/","") + href;
               url         = url.replace("//","/") + href;
               webView.loadUrlIntoView(url + href, false);
           }
