@@ -276,11 +276,27 @@ public class NativePageTransitions extends CordovaPlugin {
             bringToFront(imageView2);
           }
 
+          /*
           if (href != null && !"null".equals(href)) {
+
             if (!href.startsWith("#") && href.contains(".html")) {
               webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
             }
+
           }
+          */
+
+          if (href != null && !"null".equals(href)) 
+          {
+              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
+              url         = url.replace("#/","") + href;
+              url         = url.replace("//","/") + href;
+              webView.loadUrlIntoView(url + href, false);
+          }
+
+
+
+
 
           if (delay > -1) {
             doDrawerTransition();
@@ -301,12 +317,28 @@ public class NativePageTransitions extends CordovaPlugin {
           imageView.setImageBitmap(getBitmap());
           bringToFront(imageView);
 
+          /*
           if (href != null && !"null".equals(href)) {
             if (!href.startsWith("#") && href.contains(".html")) {
               webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
             }
           }
+          */
 
+          if (href != null && !"null".equals(href)) 
+          {
+              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
+              url         = url.replace("#/","") + href;
+              url         = url.replace("//","/") + href;
+              webView.loadUrlIntoView(url + href, false);
+
+          }
+
+
+
+
+
+          
           if (delay > -1) {
             doFadeTransition();
           } else {
@@ -330,10 +362,22 @@ public class NativePageTransitions extends CordovaPlugin {
           }
           imageView.setImageBitmap(getBitmap());
           bringToFront(imageView);
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#") && href.contains(".html")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-            }
+
+          // if (href != null && !"null".equals(href)) {
+          //   if (!href.startsWith("#") && href.contains(".html")) {
+          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          //   }
+          // }
+          //
+
+
+
+          if (href != null && !"null".equals(href)) 
+          {
+              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
+              url         = url.replace("#/","") + href;
+              url         = url.replace("//","/") + href;
+              webView.loadUrlIntoView(url + href, false);
           }
 
           if (delay > -1) {
