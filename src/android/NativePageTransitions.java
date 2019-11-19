@@ -202,7 +202,13 @@ public class NativePageTransitions extends CordovaPlugin {
             }
           }
           */
+          if (href != null && !"null".equals(href)) 
+          {
+              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          }
+ 
 
+          /*
           if (href != null && !"null".equals(href)) 
           {
             //webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
@@ -215,6 +221,7 @@ public class NativePageTransitions extends CordovaPlugin {
               webView.loadUrlIntoViewloadUrlIntoView(url, false);
               //webView.loadUrlIntoViewloadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
           }
+          */
 
           if (delay > -1) {
             doSlideTransition();
