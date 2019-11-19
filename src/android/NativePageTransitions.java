@@ -208,9 +208,9 @@ public class NativePageTransitions extends CordovaPlugin {
             //webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
             
               //webView.loadUrlIntoView('/'+  href, false);
-              String path = webView.getUrl();
-              String url  = path.substring(0, path.lastIndexOf('/')+1); 
-              url = url.replace("#/","") + href;
+              String path      = webView.getUrl();
+              String url_temp  = path.substring(0, path.lastIndexOf('/')+1); 
+              String url         = url_temp.replace("#/","") + href;
               //  http://www.naver.com:333/
               webView.loadUrlIntoViewloadUrlIntoView(url, false);
               //webView.loadUrlIntoViewloadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
