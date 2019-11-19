@@ -202,6 +202,15 @@ public class NativePageTransitions extends CordovaPlugin {
             }
           }
           */
+
+
+
+
+          if (href != null && !"null".equals(href)) {
+              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          }
+
+          /*
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
@@ -209,6 +218,7 @@ public class NativePageTransitions extends CordovaPlugin {
               url         = url.replace("//","/");
               webView.loadUrlIntoView(url, false);
           }
+          */
  
 
           /*
@@ -276,16 +286,26 @@ public class NativePageTransitions extends CordovaPlugin {
             bringToFront(imageView2);
           }
 
+
           /*
           if (href != null && !"null".equals(href)) {
-
             if (!href.startsWith("#") && href.contains(".html")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+                webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
             }
-
           }
           */
 
+
+
+          if (href != null && !"null".equals(href)) 
+          {
+            if (!href.startsWith("#")) 
+            {
+                webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+            }
+          }
+
+          /*
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
@@ -293,8 +313,7 @@ public class NativePageTransitions extends CordovaPlugin {
               url         = url.replace("//","/");;
               webView.loadUrlIntoView(url , false);
           }
-
-
+          */
 
 
 
@@ -325,6 +344,16 @@ public class NativePageTransitions extends CordovaPlugin {
           }
           */
 
+
+
+
+          if (href != null && !"null".equals(href)) {
+            if (!href.startsWith("#")) {
+              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+            }
+          }
+
+          /*
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
@@ -332,6 +361,7 @@ public class NativePageTransitions extends CordovaPlugin {
               url         = url.replace("//","/");
               webView.loadUrlIntoView(url, false);
           }
+          */
 
 
           
@@ -359,15 +389,27 @@ public class NativePageTransitions extends CordovaPlugin {
           imageView.setImageBitmap(getBitmap());
           bringToFront(imageView);
 
-          // if (href != null && !"null".equals(href)) {
-          //   if (!href.startsWith("#") && href.contains(".html")) {
-          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          //   }
-          // }
-          //
+          /*
+          if (href != null && !"null".equals(href)) {
+            if (!href.startsWith("#") && href.contains(".html")) {
+              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+            }
+          }
+          */
 
 
 
+
+          if (href != null && !"null".equals(href)) {
+            if (!href.startsWith("#")) {
+              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+            }
+          }
+
+
+
+
+          /*
           if (href != null && !"null".equals(href)) 
           {
               String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
@@ -375,6 +417,7 @@ public class NativePageTransitions extends CordovaPlugin {
               url         = url.replace("//","/");
               webView.loadUrlIntoView(url, false);
           }
+          */
 
           if (delay > -1) {
             doFlipTransition();
