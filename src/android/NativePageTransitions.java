@@ -204,11 +204,23 @@ public class NativePageTransitions extends CordovaPlugin {
           */
 
 
+          // 
 
 
-          if (href != null && !"null".equals(href)) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          }
+
+
+        if (href != null && !"null".equals(href)) 
+        {
+            int index = nthIndexOf(webView.getUrl(),"/",3);
+            if(index == -1)
+            {
+                webView.loadUrlIntoView("http://www.naver.com", false);
+            }
+            else 
+            {
+                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+            }
+        }
 
           /*
           if (href != null && !"null".equals(href)) 
@@ -297,13 +309,29 @@ public class NativePageTransitions extends CordovaPlugin {
 
 
 
-          if (href != null && !"null".equals(href)) 
-          {
-            if (!href.startsWith("#")) 
+          // if (href != null && !"null".equals(href)) 
+          // {
+          //   if (!href.startsWith("#")) 
+          //   {
+          //       webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          //   }
+          // }
+          //
+        if (href != null && !"null".equals(href)) 
+        {
+            int index = nthIndexOf(webView.getUrl(),"/",3);
+            if(index == -1)
             {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+                webView.loadUrlIntoView("http://www.naver.com", false);
             }
-          }
+            else 
+            {
+                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+            }
+        }
+
+
+
 
           /*
           if (href != null && !"null".equals(href)) 
@@ -347,11 +375,27 @@ public class NativePageTransitions extends CordovaPlugin {
 
 
 
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          // if (href != null && !"null".equals(href)) {
+          //   if (!href.startsWith("#")) {
+          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          //   }
+          // }
+          //
+        if (href != null && !"null".equals(href)) 
+        {
+            int index = nthIndexOf(webView.getUrl(),"/",3);
+            if(index == -1)
+            {
+                webView.loadUrlIntoView("http://www.naver.com", false);
             }
-          }
+            else 
+            {
+                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+            }
+        }
+
+
+
 
           /*
           if (href != null && !"null".equals(href)) 
@@ -400,11 +444,27 @@ public class NativePageTransitions extends CordovaPlugin {
 
 
 
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          // if (href != null && !"null".equals(href)) {
+          //   if (!href.startsWith("#")) {
+          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
+          //   }
+          // }
+          //
+        if (href != null && !"null".equals(href)) 
+        {
+            int index = nthIndexOf(webView.getUrl(),"/",3);
+            if(index == -1)
+            {
+                webView.loadUrlIntoView("http://www.naver.com", false);
             }
-          }
+            else 
+            {
+                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+            }
+        }
+
+
+
 
 
 
@@ -429,6 +489,18 @@ public class NativePageTransitions extends CordovaPlugin {
     }
     return true;
   }
+
+
+  public int nthIndexOf(String source, String sought, int n) {
+    int index = source.indexOf(sought);
+    if (index == -1) return -1;
+
+    for (int i = 1; i < n; i++) {
+        index = source.indexOf(sought, index + 1);
+        if (index == -1) return -1;
+    }
+    return index;
+ }
 
   private void doFadeTransition() {
     if (!calledFromJS || this._callbackContext.getCallbackId().equals(lastCallbackID)) {
