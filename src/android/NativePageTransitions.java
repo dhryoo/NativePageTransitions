@@ -218,35 +218,10 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                webView.loadUrlIntoView("http://www.naver.com", false);
             }
         }
-
-          /*
-          if (href != null && !"null".equals(href)) 
-          {
-              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
-              url         = url.replace("//","/");
-              webView.loadUrlIntoView(url, false);
-          }
-          */
- 
-
-          /*
-          if (href != null && !"null".equals(href)) 
-          {
-            //webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-            
-              //webView.loadUrlIntoView('/'+  href, false);
-              String path      = webView.getUrl();
-              String url_temp  = path.substring(0, path.lastIndexOf('/')+1); 
-              String url         = url_temp.replace("#/","") + href;
-              //  http://www.naver.com:333/
-              webView.loadUrlIntoViewloadUrlIntoView(url, false);
-              //webView.loadUrlIntoViewloadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          }
-          */
 
           if (delay > -1) {
             doSlideTransition();
@@ -299,24 +274,6 @@ public class NativePageTransitions extends CordovaPlugin {
           }
 
 
-          /*
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#") && href.contains(".html")) {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-            }
-          }
-          */
-
-
-
-          // if (href != null && !"null".equals(href)) 
-          // {
-          //   if (!href.startsWith("#")) 
-          //   {
-          //       webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          //   }
-          // }
-          //
         if (href != null && !"null".equals(href)) 
         {
             int index = nthIndexOf(webView.getUrl(),"/",3);
@@ -326,22 +283,12 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+
+                webView.loadUrlIntoView("http://www.naver.com", false);
+                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
             }
         }
 
-
-
-
-          /*
-          if (href != null && !"null".equals(href)) 
-          {
-              String url  = webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1);
-              url         = url.replace("#/","") + href;
-              url         = url.replace("//","/");;
-              webView.loadUrlIntoView(url , false);
-          }
-          */
 
 
 
@@ -364,23 +311,6 @@ public class NativePageTransitions extends CordovaPlugin {
           imageView.setImageBitmap(getBitmap());
           bringToFront(imageView);
 
-          /*
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#") && href.contains(".html")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-            }
-          }
-          */
-
-
-
-
-          // if (href != null && !"null".equals(href)) {
-          //   if (!href.startsWith("#")) {
-          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          //   }
-          // }
-          //
         if (href != null && !"null".equals(href)) 
         {
             int index = nthIndexOf(webView.getUrl(),"/",3);
@@ -390,7 +320,9 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+
+                webView.loadUrlIntoView("http://www.naver.com", false);
+                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
             }
         }
 
@@ -433,24 +365,7 @@ public class NativePageTransitions extends CordovaPlugin {
           imageView.setImageBitmap(getBitmap());
           bringToFront(imageView);
 
-          /*
-          if (href != null && !"null".equals(href)) {
-            if (!href.startsWith("#") && href.contains(".html")) {
-              webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-            }
-          }
-          */
-
-
-
-
-          // if (href != null && !"null".equals(href)) {
-          //   if (!href.startsWith("#")) {
-          //     webView.loadUrlIntoView(webView.getUrl().substring(0, webView.getUrl().lastIndexOf('/')+1) + href, false);
-          //   }
-          // }
-          //
-        if (href != null && !"null".equals(href)) 
+          if (href != null && !"null".equals(href)) 
         {
             int index = nthIndexOf(webView.getUrl(),"/",3);
             if(index == -1)
@@ -459,7 +374,8 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
-                webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                webView.loadUrlIntoView("http://www.naver.com", false);
+                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
             }
         }
 
