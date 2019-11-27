@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.TextureView;
 import android.view.View;
@@ -215,13 +214,12 @@ public class NativePageTransitions extends CordovaPlugin {
             int index = nthIndexOf(webView.getUrl(),"/",3);
             if(index == -1)
             {
-                Log.d("can't find end of localhost");
+                System.out.println("can't find end of localhost");
                 return;
             }
             else 
             {
                 String target_url = webView.getUrl().substring(0, index+1) + href;
-                Log.d("target_url",target_url);
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -283,13 +281,12 @@ public class NativePageTransitions extends CordovaPlugin {
             int index = nthIndexOf(webView.getUrl(),"/",3);
             if(index == -1)
             {
-                Log.d("can't find end of localhost");
+                System.out.println("can't find end of localhost");
                 return;
             }
             else 
             {
                 String target_url = webView.getUrl().substring(0, index+1) + href;
-                Log.d("target_url",target_url);
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -324,13 +321,12 @@ public class NativePageTransitions extends CordovaPlugin {
 
             if(index == -1)
             {
-                Log.d("can't find end of localhost");
+                System.out.println("can't find end of localhost");
                 return;
             }
             else 
             {
                 String target_url = webView.getUrl().substring(0, index+1) + href;
-                Log.d("target_url",target_url);
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -383,13 +379,12 @@ public class NativePageTransitions extends CordovaPlugin {
 
             if(index == -1)
             {
-                Log.d("can't find end of localhost");
+                System.out.println("can't find end of localhost");
                 return;
             }
             else 
             {
                 String target_url = webView.getUrl().substring(0, index+1) + href;
-                Log.d("target_url",target_url);
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
