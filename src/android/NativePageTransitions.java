@@ -214,12 +214,15 @@ public class NativePageTransitions extends CordovaPlugin {
             int index = nthIndexOf(webView.getUrl(),"/",3);
             if(index == -1)
             {
-                webView.loadUrlIntoView("http://www.naver.com", false);
+                Log.d("can't find end of localhost");
+                return;
             }
             else 
             {
-                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
-                webView.loadUrlIntoView("http://www.naver.com", false);
+                String target_url = webView.getUrl().substring(0, index+1) + href;
+                Log.d("target_url",target_url);
+                System.out.println("target_url " + target_url);
+                webView.loadUrlIntoView(target_url, false);
             }
         }
 
@@ -279,14 +282,17 @@ public class NativePageTransitions extends CordovaPlugin {
             int index = nthIndexOf(webView.getUrl(),"/",3);
             if(index == -1)
             {
-                webView.loadUrlIntoView("http://www.naver.com", false);
+                Log.d("can't find end of localhost");
+                return;
             }
             else 
             {
-
-                webView.loadUrlIntoView("http://www.naver.com", false);
-                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                String target_url = webView.getUrl().substring(0, index+1) + href;
+                Log.d("target_url",target_url);
+                System.out.println("target_url " + target_url);
+                webView.loadUrlIntoView(target_url, false);
             }
+
         }
 
 
@@ -314,16 +320,21 @@ public class NativePageTransitions extends CordovaPlugin {
         if (href != null && !"null".equals(href)) 
         {
             int index = nthIndexOf(webView.getUrl(),"/",3);
+
             if(index == -1)
             {
-                webView.loadUrlIntoView("http://www.naver.com", false);
+                Log.d("can't find end of localhost");
+                return;
             }
             else 
             {
-
-                webView.loadUrlIntoView("http://www.naver.com", false);
-                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                String target_url = webView.getUrl().substring(0, index+1) + href;
+                Log.d("target_url",target_url);
+                System.out.println("target_url " + target_url);
+                webView.loadUrlIntoView(target_url, false);
             }
+
+
         }
 
 
@@ -368,15 +379,20 @@ public class NativePageTransitions extends CordovaPlugin {
           if (href != null && !"null".equals(href)) 
         {
             int index = nthIndexOf(webView.getUrl(),"/",3);
+
             if(index == -1)
             {
-                webView.loadUrlIntoView("http://www.naver.com", false);
+                Log.d("can't find end of localhost");
+                return;
             }
             else 
             {
-                webView.loadUrlIntoView("http://www.naver.com", false);
-                //webView.loadUrlIntoView(webView.getUrl().substring(0, index+1) + href, false);
+                String target_url = webView.getUrl().substring(0, index+1) + href;
+                Log.d("target_url",target_url);
+                System.out.println("target_url " + target_url);
+                webView.loadUrlIntoView(target_url, false);
             }
+
         }
 
 
