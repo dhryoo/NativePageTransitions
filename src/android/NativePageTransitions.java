@@ -224,7 +224,7 @@ public class NativePageTransitions extends CordovaPlugin {
             {
                 System.out.println("getUrl =>" + webView.getUrl());
                 //file:///android_asset/www/index.htm#/
-                String target_url = webView.getUrl().substring(0, index +10 ) +"/" + href;
+                String target_url = webView.getUrl().substring(0, index +10 )  + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -297,7 +297,7 @@ public class NativePageTransitions extends CordovaPlugin {
             {
                 System.out.println("getUrl =>" + webView.getUrl());
                 //file:///android_asset/www/index.htm#/
-                String target_url = webView.getUrl().substring(0, index + 10 ) +"/" + href;
+                String target_url = webView.getUrl().substring(0, index + 10 )  + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -340,7 +340,7 @@ public class NativePageTransitions extends CordovaPlugin {
             {
                 System.out.println("getUrl =>" + webView.getUrl());
                 //file:///android_asset/www/index.htm#/
-                String target_url = webView.getUrl().substring(0, index + 10 ) +"/" + href;
+                String target_url = webView.getUrl().substring(0, index + 10 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -401,7 +401,7 @@ public class NativePageTransitions extends CordovaPlugin {
             {
                 System.out.println("getUrl =>" + webView.getUrl());
                 //file:///android_asset/www/index.htm#/
-                String target_url = webView.getUrl().substring(0, index + 10 ) +"/" + href;
+                String target_url = webView.getUrl().substring(0, index + 10 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
