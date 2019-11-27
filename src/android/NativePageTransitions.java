@@ -216,15 +216,15 @@ public class NativePageTransitions extends CordovaPlugin {
             if(index == -1)
             {
                 System.out.println("can't find end of localhost");
-                String target_url = "file:///android_asset/www/index.html#/";
+                String target_url = "file:///android_asset/www/index.htm#/";
                 webView.loadUrlIntoView(target_url, false);
                 return;
             }
             else 
             {
                 System.out.println("getUrl =>" + webView.getUrl());
-                //file:///android_asset/www/index.html#/
-                String target_url = webView.getUrl().substring(0, index ) + href;
+                //file:///android_asset/www/index.htm#/
+                String target_url = webView.getUrl().substring(0, index +9 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -289,15 +289,15 @@ public class NativePageTransitions extends CordovaPlugin {
             if(index == -1)
             {
                 System.out.println("can't find end of localhost");
-                String target_url = "file:///android_asset/www/index.html#/";
+                String target_url = "file:///android_asset/www/index.htm#/";
                 webView.loadUrlIntoView(target_url, false);
                 return;
             }
             else 
             {
                 System.out.println("getUrl =>" + webView.getUrl());
-                //file:///android_asset/www/index.html#/
-                String target_url = webView.getUrl().substring(0, index ) + href;
+                //file:///android_asset/www/index.htm#/
+                String target_url = webView.getUrl().substring(0, index +9 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -332,15 +332,15 @@ public class NativePageTransitions extends CordovaPlugin {
             if(index == -1)
             {
                 System.out.println("can't find end of localhost");
-                String target_url = "file:///android_asset/www/index.html#/";
+                String target_url = "file:///android_asset/www/index.htm#/";
                 webView.loadUrlIntoView(target_url, false);
                 return;
             }
             else 
             {
                 System.out.println("getUrl =>" + webView.getUrl());
-                //file:///android_asset/www/index.html#/
-                String target_url = webView.getUrl().substring(0, index ) + href;
+                //file:///android_asset/www/index.htm#/
+                String target_url = webView.getUrl().substring(0, index +9 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
@@ -393,15 +393,15 @@ public class NativePageTransitions extends CordovaPlugin {
             if(index == -1)
             {
                 System.out.println("can't find end of localhost");
-                String target_url = "file:///android_asset/www/index.html#/";
+                String target_url = "file:///android_asset/www/index.htm#/";
                 webView.loadUrlIntoView(target_url, false);
                 return;
             }
             else 
             {
                 System.out.println("getUrl =>" + webView.getUrl());
-                //file:///android_asset/www/index.html#/
-                String target_url = webView.getUrl().substring(0, index ) + href;
+                //file:///android_asset/www/index.htm#/
+                String target_url = webView.getUrl().substring(0, index +9 ) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
             }
