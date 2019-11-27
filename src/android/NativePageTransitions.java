@@ -219,6 +219,7 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
+                System.out.println("getUrl =>" + webView.getUrl());
                 String target_url = webView.getUrl().substring(0, index+1) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
@@ -286,6 +287,7 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
+                System.out.println("getUrl =>" + webView.getUrl());
                 String target_url = webView.getUrl().substring(0, index+1) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
@@ -326,6 +328,7 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
+                System.out.println("getUrl =>" + webView.getUrl());
                 String target_url = webView.getUrl().substring(0, index+1) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
@@ -384,6 +387,7 @@ public class NativePageTransitions extends CordovaPlugin {
             }
             else 
             {
+                System.out.println("getUrl =>" + webView.getUrl());
                 String target_url = webView.getUrl().substring(0, index+1) + href;
                 System.out.println("target_url " + target_url);
                 webView.loadUrlIntoView(target_url, false);
